@@ -1,0 +1,183 @@
+/* تلاوة الليل — سِمة ليلية هادئة، عربية RTL، للجوال أولاً */
+
+:root{
+  --bg:#0a0f1f; --bg2:#070b16; --card:#141b2f; --card2:#1b2440;
+  --line:#26315a; --tx:#e8ecf6; --muted:#93a0bd; --gold:#f2c14e; --gold2:#ffdf9e;
+  --danger:#ff7a7a; --ok:#6ee7a8; --r:16px;
+  --safe-t:env(safe-area-inset-top,0px); --safe-b:env(safe-area-inset-bottom,0px);
+}
+
+*{box-sizing:border-box}
+/* حسّاس: قواعد .player/.bar/.banner تضع display:flex وهي تغلب سِمة hidden —
+   فبدون هذا السطر يظل المشغّل غطاءً دائماً فوق التطبيق. */
+[hidden]{display:none!important}
+html,body{margin:0;padding:0}
+body{
+  background:linear-gradient(180deg,#0a0f1f 0%,#070b16 100%);
+  color:var(--tx); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Tahoma,"Noto Naskh Arabic",sans-serif;
+  min-height:100dvh; -webkit-text-size-adjust:100%; overflow-x:hidden;
+}
+body.locked{overflow:hidden}
+button,input{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer;text-align:right}
+b{font-weight:700}
+.muted{color:var(--muted)}
+.small{font-size:.875rem}
+.pad{padding:16px}
+.foot{color:var(--muted);font-size:.8rem;line-height:1.9;padding:18px 4px 90px;text-align:center}
+.warn{color:var(--gold);background:#2a2413;border:1px solid #4a3f1c;padding:10px 12px;border-radius:12px;font-size:.85rem;margin:10px 0}
+code{background:#1b2440;padding:2px 6px;border-radius:6px;font-size:.85em;direction:ltr;display:inline-block}
+
+/* ── الشريط الأعلى ── */
+.topbar{
+  position:sticky; top:0; z-index:30; display:flex; align-items:center; gap:8px;
+  padding:calc(var(--safe-t) + 10px) 14px 10px;
+  background:rgba(10,15,31,.92); backdrop-filter:blur(12px); border-bottom:1px solid var(--line);
+}
+.topbar h1{font-size:1.05rem;margin:0;flex:1}
+.ver{color:var(--muted);font-size:.7rem;direction:ltr}
+.iconbtn{
+  width:38px;height:38px;border-radius:12px;display:grid;place-items:center;
+  background:var(--card);border:1px solid var(--line);font-size:1.1rem;color:var(--tx);text-align:center;
+}
+.iconbtn:active{background:var(--card2)}
+
+.view{padding:14px 14px 0;max-width:720px;margin:0 auto}
+.h{font-size:1rem;margin:18px 4px 10px;color:var(--muted);font-weight:600}
+
+/* ── بطاقات ── */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px;width:100%;display:block;margin-bottom:12px}
+.grid{display:grid;gap:12px}
+.card.big{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;gap:2px 12px;align-items:center;padding:16px;text-align:right}
+.card.big .ic{grid-row:1/3;font-size:1.7rem}
+.card.big b{font-size:1.02rem}
+.card.big small{color:var(--muted);font-size:.8rem;line-height:1.5}
+.card.big:active{background:var(--card2)}
+.card.cont{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;background:linear-gradient(135deg,#1d2745,#141b2f);border-color:#33417a}
+.cont-ic{font-size:1.2rem;width:44px;height:44px;border-radius:50%;background:var(--gold);color:#1b1400;display:grid;place-items:center}
+.cont-tx{display:grid;gap:2px}
+.cont-tx small{color:var(--muted);font-size:.82rem}
+
+/* ── أدوات القائمة ── */
+.toolbar{position:sticky;top:calc(var(--safe-t) + 57px);z-index:20;background:var(--bg);padding:6px 0 8px;margin:-6px 0 0}
+.search{
+  width:100%;padding:12px 14px;border-radius:14px;background:var(--card);
+  border:1px solid var(--line);outline:none;margin-bottom:8px;
+}
+.search:focus{border-color:var(--gold)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chipf,.chip{
+  white-space:nowrap;padding:8px 14px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);color:var(--muted);font-size:.85rem;
+}
+.chipf.on,.chip.on{background:var(--gold);color:#1b1400;border-color:var(--gold);font-weight:700}
+.chipchip{color:var(--muted);font-size:.75rem}
+
+/* ── الصفوف ── */
+.list{display:grid;gap:8px;padding-bottom:20px}
+.row{
+  display:flex;align-items:center;gap:12px;width:100%;
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:right;
+}
+.row.tall{padding:14px}
+.row:active{background:var(--card2)}
+.row.off{opacity:.42;cursor:not-allowed}
+.row.static{background:var(--card)}
+.row-main{display:grid;gap:2px;flex:1;min-width:0}
+.row-main b{font-size:1rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row-main small{color:var(--muted);font-size:.78rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row-art{font-size:1.3rem;width:32px;text-align:center}
+.num{
+  min-width:34px;height:34px;border-radius:10px;background:var(--card2);border:1px solid var(--line);
+  display:grid;place-items:center;font-size:.85rem;color:var(--gold);font-variant-numeric:tabular-nums;
+}
+.badges{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-start}
+.bdg{font-size:.68rem;background:var(--card2);border:1px solid var(--line);color:var(--muted);padding:3px 7px;border-radius:999px;white-space:nowrap}
+.bdg.ok{color:var(--ok);border-color:#27503c}
+.row-wrap{display:flex;gap:8px;align-items:stretch}
+.row-wrap .row{flex:1}
+.row-act{
+  width:46px;border-radius:14px;background:var(--card);border:1px solid var(--line);
+  display:grid;place-items:center;font-size:1.05rem;color:var(--gold);
+}
+.row-act.danger{color:var(--danger)}
+.row-act:active{background:var(--card2)}
+.picker{display:flex;align-items:center;gap:12px;width:100%;background:linear-gradient(135deg,#1d2745,#141b2f);border:1px solid #33417a;border-radius:14px;padding:12px 14px;margin-bottom:12px}
+.chev{color:var(--muted);font-size:1.2rem}
+
+/* ── المشغّل المصغّر ── */
+.bar{
+  position:fixed;inset-inline:0;bottom:0;z-index:40;
+  display:flex;align-items:center;gap:10px;
+  padding:8px 12px calc(8px + var(--safe-b));
+  background:rgba(18,24,45,.96);backdrop-filter:blur(14px);border-top:1px solid var(--line);
+}
+.bar-main{display:flex;align-items:center;gap:10px;flex:1;min-width:0}
+.bar-art{width:40px;height:40px;border-radius:12px;background:var(--card2);display:grid;place-items:center;font-size:1.1rem;flex:none}
+.bar-meta{display:grid;gap:0;min-width:0}
+.bar-title{font-size:.92rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-sub{font-size:.74rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-timer{font-size:.75rem;color:var(--gold);direction:ltr;white-space:nowrap}
+.playbtn{width:46px;height:46px;border-radius:50%;background:var(--gold);color:#1b1400;font-size:1.05rem;display:grid;place-items:center;flex:none}
+
+/* ── شاشة المشغّل الكاملة ── */
+.player{
+  position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;align-items:center;
+  background:radial-gradient(ellipse at 50% 0%,#141d38 0%,#070b16 60%);
+  padding:calc(var(--safe-t) + 10px) 20px calc(var(--safe-b) + 18px);
+  overflow-y:auto;
+}
+.player-top{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:520px}
+.player-art{font-size:5.5rem;margin:6vh 0 3vh;filter:drop-shadow(0 0 30px rgba(242,193,78,.25))}
+.pl-title{font-size:1.5rem;margin:0;text-align:center;font-weight:700}
+.pl-sub{color:var(--muted);margin:6px 0 0;text-align:center;font-size:.95rem}
+.seek{display:flex;align-items:center;gap:10px;width:100%;max-width:520px;margin:6vh 0 0}
+.seek .t{color:var(--muted);font-size:.75rem;direction:ltr;min-width:40px;text-align:center;font-variant-numeric:tabular-nums}
+.seekbar{position:relative;flex:1;height:26px;display:flex;align-items:center;cursor:pointer;touch-action:none}
+.seekbar::before{content:"";position:absolute;inset-inline:0;height:5px;border-radius:99px;background:#243056}
+.seekfill{position:absolute;inset-inline-start:0;height:5px;width:0;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--gold2))}
+.controls{display:flex;align-items:center;gap:14px;margin:4vh 0 0;flex-wrap:wrap;justify-content:center}
+.ctl{width:56px;height:56px;border-radius:50%;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;font-size:1.15rem}
+.ctl.small{width:52px;height:52px;font-size:.78rem;color:var(--muted)}
+.ctl.main{width:76px;height:76px;background:var(--gold);color:#1b1400;font-size:1.5rem;border:0}
+.ctl:active{transform:scale(.96)}
+.pl-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:4vh;padding-bottom:10px}
+
+/* ── الشرائح ── */
+.sheet-wrap{position:fixed;inset:0;z-index:80;display:flex;align-items:flex-end}
+.sheet-backdrop{position:absolute;inset:0;background:rgba(3,6,14,.6)}
+.sheet{
+  position:relative;width:100%;max-width:620px;margin:0 auto;max-height:82dvh;overflow:auto;
+  background:var(--card);border-top:1px solid var(--line);border-radius:20px 20px 0 0;
+  padding:14px 16px calc(20px + var(--safe-b));
+}
+.sheet-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;font-weight:700}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.btn{padding:14px;border-radius:14px;background:var(--card2);border:1px solid var(--line);text-align:center}
+.btn.wide{width:100%;margin-bottom:10px}
+.btn.on{background:var(--gold);color:#1b1400;border-color:var(--gold);font-weight:700}
+.btn.danger{color:var(--danger);border-color:#4a2634}
+.switch{display:flex;align-items:center;gap:10px;padding:10px 2px;color:var(--muted);font-size:.9rem}
+.switch input{width:20px;height:20px;accent-color:var(--gold)}
+
+/* ── شريط التقدّم والتنبيه ── */
+.banner{
+  position:fixed;inset-inline:0;top:calc(var(--safe-t) + 60px);z-index:70;
+  display:flex;align-items:center;gap:10px;margin:0 14px;padding:12px 14px;
+  background:#1d2745;border:1px solid #33417a;border-radius:14px;font-size:.85rem;
+}
+.banner span{flex:1}
+.banner-x{color:var(--muted)}
+.toast{
+  position:fixed;bottom:calc(var(--safe-b) + 84px);inset-inline:14px;z-index:90;
+  background:#1d2745;border:1px solid #33417a;border-radius:14px;padding:12px 14px;font-size:.85rem;
+  box-shadow:0 10px 30px rgba(0,0,0,.45);max-width:620px;margin:0 auto;
+}
+
+@media (min-width:640px){
+  .grid{grid-template-columns:1fr 1fr}
+  .card.big{margin-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>تلاوة الليل</title>
+<meta name="description" content="مشغّل تلاوات القرآن قبل النوم: يعمل في الخلفية والشاشة مطفأة، سور كاملة أو مقتطفات بحسب الموضوع، بلا تخزين للصوت على أي جهاز." />
+<meta name="theme-color" content="#0a0f1f" />
+<meta name="color-scheme" content="dark" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon-180.png" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="تلاوة الليل" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <button id="back" class="iconbtn" hidden aria-label="رجوع">›</button>
+  <h1 id="title">تلاوة الليل</h1>
+  <span id="version" class="ver" title="الإصدار"></span>
+</header>
+
+<main id="view" class="view" aria-live="polite"></main>
+
+<div id="banner" class="banner" hidden>
+  <span id="banner-text"></span>
+  <button id="banner-cancel" class="banner-x" aria-label="إلغاء">✕</button>
+</div>
+
+<div id="bar" class="bar" hidden>
+  <button id="bar-open" class="bar-main" aria-label="فتح المشغّل">
+    <span class="bar-art" aria-hidden="true">🌙</span>
+    <span class="bar-meta">
+      <span id="bar-title" class="bar-title"></span>
+      <span id="bar-sub" class="bar-sub"></span>
+    </span>
+  </button>
+  <span id="bar-timer" class="bar-timer" hidden></span>
+  <button id="bar-toggle" class="playbtn" aria-label="تشغيل/إيقاف">▶</button>
+</div>
+
+<section id="player" class="player" hidden aria-label="المشغّل">
+  <div class="player-top">
+    <button id="pl-close" class="iconbtn" aria-label="إغلاق">⌄</button>
+    <span id="pl-rewaya" class="chipchip"></span>
+    <button id="pl-offline" class="iconbtn" aria-label="حفظ بلا إنترنت" title="حفظ بلا إنترنت">⤓</button>
+  </div>
+
+  <div class="player-art" aria-hidden="true">🌙</div>
+
+  <h2 id="pl-title" class="pl-title"></h2>
+  <p id="pl-sub" class="pl-sub"></p>
+
+  <div class="seek" id="pl-seek">
+    <span id="pl-now" class="t">٠:٠٠</span>
+    <div class="seekbar" id="pl-bar" role="slider" aria-label="شريط التقدّم" tabindex="0">
+      <div class="seekfill" id="pl-fill"></div>
+    </div>
+    <span id="pl-dur" class="t">٠:٠٠</span>
+  </div>
+
+  <div class="controls">
+    <button id="pl-prev" class="ctl" aria-label="السابق">⏮</button>
+    <button id="pl-back" class="ctl small" aria-label="إرجاع ١٥ ثانية" title="إرجاع ١٥ ثانية">١٥</button>
+    <button id="pl-toggle" class="ctl main" aria-label="تشغيل/إيقاف">▶</button>
+    <button id="pl-fwd" class="ctl small" aria-label="تقديم ٣٠ ثانية" title="تقديم ٣٠ ثانية">٣٠</button>
+    <button id="pl-next" class="ctl" aria-label="التالي">⏭</button>
+  </div>
+
+  <div class="pl-row">
+    <button id="pl-timer" class="chip">⏳ مؤقّت النوم</button>
+    <button id="pl-repeat" class="chip" aria-pressed="false">🔁 تكرار</button>
+    <span id="pl-offline-note" class="chipchip"></span>
+  </div>
+</section>
+
+<div id="sheet" class="sheet-wrap" hidden>
+  <div class="sheet-backdrop" id="sheet-backdrop"></div>
+  <div class="sheet" role="dialog" aria-modal="true">
+    <div class="sheet-head"><span id="sheet-title"></span><button id="sheet-close" class="iconbtn" aria-label="إغلاق">✕</button></div>
+    <div id="sheet-body" class="sheet-body"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

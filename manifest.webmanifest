@@ -1,0 +1,26 @@
+{
+  "id": "/quran-night/",
+  "name": "تلاوة الليل",
+  "short_name": "تلاوة الليل",
+  "description": "مشغّل تلاوات القرآن قبل النوم: يعمل في الخلفية والشاشة مطفأة، سور كاملة أو مقتطفات بحسب الموضوع، بلا تخزين للصوت على أي جهاز.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#0a0f1f",
+  "theme_color": "#0a0f1f",
+  "categories": ["audio", "lifestyle", "education"],
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    { "src": "docs/1-home.png", "sizes": "390x844", "type": "image/png", "form_factor": "narrow", "label": "الرئيسية: سور كاملة · مقتطفات · بث مستمر" },
+    { "src": "docs/3-player.png", "sizes": "390x844", "type": "image/png", "form_factor": "narrow", "label": "المشغّل: مؤقّت نوم وتشغيل في الخلفية" },
+    { "src": "docs/5-topics.png", "sizes": "390x844", "type": "image/png", "form_factor": "narrow", "label": "المقتطفات بحسب الموضوع" }
+  ]
+}

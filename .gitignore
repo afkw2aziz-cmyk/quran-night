@@ -1,0 +1,20 @@
+# ── أسرار ومحلي — لا تُرفع أبداً ──
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.crt
+*.srl
+secrets/
+
+# ── أدوات وتشغيل ──
+node_modules/
+tools/.cache/
+*.log
+.DS_Store
+Thumbs.db
+
+# ── ملفات ميدانية محلية (تجارب) ──
+*.local.json
+test/.tmp-*

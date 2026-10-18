@@ -1,0 +1,804 @@
+{
+ "generated": "2026-10-18",
+ "source": "quran.com/api/v4/chapters",
+ "surahs": [
+  {
+   "n": 1,
+   "name": "الفاتحة",
+   "en": "Al-Fatihah",
+   "verses": 7,
+   "makki": true
+  },
+  {
+   "n": 2,
+   "name": "البقرة",
+   "en": "Al-Baqarah",
+   "verses": 286,
+   "makki": false
+  },
+  {
+   "n": 3,
+   "name": "آل عمران",
+   "en": "Ali 'Imran",
+   "verses": 200,
+   "makki": false
+  },
+  {
+   "n": 4,
+   "name": "النساء",
+   "en": "An-Nisa",
+   "verses": 176,
+   "makki": false
+  },
+  {
+   "n": 5,
+   "name": "المائدة",
+   "en": "Al-Ma'idah",
+   "verses": 120,
+   "makki": false
+  },
+  {
+   "n": 6,
+   "name": "الأنعام",
+   "en": "Al-An'am",
+   "verses": 165,
+   "makki": true
+  },
+  {
+   "n": 7,
+   "name": "الأعراف",
+   "en": "Al-A'raf",
+   "verses": 206,
+   "makki": true
+  },
+  {
+   "n": 8,
+   "name": "الأنفال",
+   "en": "Al-Anfal",
+   "verses": 75,
+   "makki": false
+  },
+  {
+   "n": 9,
+   "name": "التوبة",
+   "en": "At-Tawbah",
+   "verses": 129,
+   "makki": false
+  },
+  {
+   "n": 10,
+   "name": "يونس",
+   "en": "Yunus",
+   "verses": 109,
+   "makki": true
+  },
+  {
+   "n": 11,
+   "name": "هود",
+   "en": "Hud",
+   "verses": 123,
+   "makki": true
+  },
+  {
+   "n": 12,
+   "name": "يوسف",
+   "en": "Yusuf",
+   "verses": 111,
+   "makki": true
+  },
+  {
+   "n": 13,
+   "name": "الرعد",
+   "en": "Ar-Ra'd",
+   "verses": 43,
+   "makki": false
+  },
+  {
+   "n": 14,
+   "name": "ابراهيم",
+   "en": "Ibrahim",
+   "verses": 52,
+   "makki": true
+  },
+  {
+   "n": 15,
+   "name": "الحجر",
+   "en": "Al-Hijr",
+   "verses": 99,
+   "makki": true
+  },
+  {
+   "n": 16,
+   "name": "النحل",
+   "en": "An-Nahl",
+   "verses": 128,
+   "makki": true
+  },
+  {
+   "n": 17,
+   "name": "الإسراء",
+   "en": "Al-Isra",
+   "verses": 111,
+   "makki": true
+  },
+  {
+   "n": 18,
+   "name": "الكهف",
+   "en": "Al-Kahf",
+   "verses": 110,
+   "makki": true
+  },
+  {
+   "n": 19,
+   "name": "مريم",
+   "en": "Maryam",
+   "verses": 98,
+   "makki": true
+  },
+  {
+   "n": 20,
+   "name": "طه",
+   "en": "Taha",
+   "verses": 135,
+   "makki": true
+  },
+  {
+   "n": 21,
+   "name": "الأنبياء",
+   "en": "Al-Anbya",
+   "verses": 112,
+   "makki": true
+  },
+  {
+   "n": 22,
+   "name": "الحج",
+   "en": "Al-Hajj",
+   "verses": 78,
+   "makki": false
+  },
+  {
+   "n": 23,
+   "name": "المؤمنون",
+   "en": "Al-Mu'minun",
+   "verses": 118,
+   "makki": true
+  },
+  {
+   "n": 24,
+   "name": "النور",
+   "en": "An-Nur",
+   "verses": 64,
+   "makki": false
+  },
+  {
+   "n": 25,
+   "name": "الفرقان",
+   "en": "Al-Furqan",
+   "verses": 77,
+   "makki": true
+  },
+  {
+   "n": 26,
+   "name": "الشعراء",
+   "en": "Ash-Shu'ara",
+   "verses": 227,
+   "makki": true
+  },
+  {
+   "n": 27,
+   "name": "النمل",
+   "en": "An-Naml",
+   "verses": 93,
+   "makki": true
+  },
+  {
+   "n": 28,
+   "name": "القصص",
+   "en": "Al-Qasas",
+   "verses": 88,
+   "makki": true
+  },
+  {
+   "n": 29,
+   "name": "العنكبوت",
+   "en": "Al-'Ankabut",
+   "verses": 69,
+   "makki": true
+  },
+  {
+   "n": 30,
+   "name": "الروم",
+   "en": "Ar-Rum",
+   "verses": 60,
+   "makki": true
+  },
+  {
+   "n": 31,
+   "name": "لقمان",
+   "en": "Luqman",
+   "verses": 34,
+   "makki": true
+  },
+  {
+   "n": 32,
+   "name": "السجدة",
+   "en": "As-Sajdah",
+   "verses": 30,
+   "makki": true
+  },
+  {
+   "n": 33,
+   "name": "الأحزاب",
+   "en": "Al-Ahzab",
+   "verses": 73,
+   "makki": false
+  },
+  {
+   "n": 34,
+   "name": "سبإ",
+   "en": "Saba",
+   "verses": 54,
+   "makki": true
+  },
+  {
+   "n": 35,
+   "name": "فاطر",
+   "en": "Fatir",
+   "verses": 45,
+   "makki": true
+  },
+  {
+   "n": 36,
+   "name": "يس",
+   "en": "Ya-Sin",
+   "verses": 83,
+   "makki": true
+  },
+  {
+   "n": 37,
+   "name": "الصافات",
+   "en": "As-Saffat",
+   "verses": 182,
+   "makki": true
+  },
+  {
+   "n": 38,
+   "name": "ص",
+   "en": "Sad",
+   "verses": 88,
+   "makki": true
+  },
+  {
+   "n": 39,
+   "name": "الزمر",
+   "en": "Az-Zumar",
+   "verses": 75,
+   "makki": true
+  },
+  {
+   "n": 40,
+   "name": "غافر",
+   "en": "Ghafir",
+   "verses": 85,
+   "makki": true
+  },
+  {
+   "n": 41,
+   "name": "فصلت",
+   "en": "Fussilat",
+   "verses": 54,
+   "makki": true
+  },
+  {
+   "n": 42,
+   "name": "الشورى",
+   "en": "Ash-Shuraa",
+   "verses": 53,
+   "makki": true
+  },
+  {
+   "n": 43,
+   "name": "الزخرف",
+   "en": "Az-Zukhruf",
+   "verses": 89,
+   "makki": true
+  },
+  {
+   "n": 44,
+   "name": "الدخان",
+   "en": "Ad-Dukhan",
+   "verses": 59,
+   "makki": true
+  },
+  {
+   "n": 45,
+   "name": "الجاثية",
+   "en": "Al-Jathiyah",
+   "verses": 37,
+   "makki": true
+  },
+  {
+   "n": 46,
+   "name": "الأحقاف",
+   "en": "Al-Ahqaf",
+   "verses": 35,
+   "makki": true
+  },
+  {
+   "n": 47,
+   "name": "محمد",
+   "en": "Muhammad",
+   "verses": 38,
+   "makki": false
+  },
+  {
+   "n": 48,
+   "name": "الفتح",
+   "en": "Al-Fath",
+   "verses": 29,
+   "makki": false
+  },
+  {
+   "n": 49,
+   "name": "الحجرات",
+   "en": "Al-Hujurat",
+   "verses": 18,
+   "makki": false
+  },
+  {
+   "n": 50,
+   "name": "ق",
+   "en": "Qaf",
+   "verses": 45,
+   "makki": true
+  },
+  {
+   "n": 51,
+   "name": "الذاريات",
+   "en": "Adh-Dhariyat",
+   "verses": 60,
+   "makki": true
+  },
+  {
+   "n": 52,
+   "name": "الطور",
+   "en": "At-Tur",
+   "verses": 49,
+   "makki": true
+  },
+  {
+   "n": 53,
+   "name": "النجم",
+   "en": "An-Najm",
+   "verses": 62,
+   "makki": true
+  },
+  {
+   "n": 54,
+   "name": "القمر",
+   "en": "Al-Qamar",
+   "verses": 55,
+   "makki": true
+  },
+  {
+   "n": 55,
+   "name": "الرحمن",
+   "en": "Ar-Rahman",
+   "verses": 78,
+   "makki": false
+  },
+  {
+   "n": 56,
+   "name": "الواقعة",
+   "en": "Al-Waqi'ah",
+   "verses": 96,
+   "makki": true
+  },
+  {
+   "n": 57,
+   "name": "الحديد",
+   "en": "Al-Hadid",
+   "verses": 29,
+   "makki": false
+  },
+  {
+   "n": 58,
+   "name": "المجادلة",
+   "en": "Al-Mujadila",
+   "verses": 22,
+   "makki": false
+  },
+  {
+   "n": 59,
+   "name": "الحشر",
+   "en": "Al-Hashr",
+   "verses": 24,
+   "makki": false
+  },
+  {
+   "n": 60,
+   "name": "الممتحنة",
+   "en": "Al-Mumtahanah",
+   "verses": 13,
+   "makki": false
+  },
+  {
+   "n": 61,
+   "name": "الصف",
+   "en": "As-Saf",
+   "verses": 14,
+   "makki": false
+  },
+  {
+   "n": 62,
+   "name": "الجمعة",
+   "en": "Al-Jumu'ah",
+   "verses": 11,
+   "makki": false
+  },
+  {
+   "n": 63,
+   "name": "المنافقون",
+   "en": "Al-Munafiqun",
+   "verses": 11,
+   "makki": false
+  },
+  {
+   "n": 64,
+   "name": "التغابن",
+   "en": "At-Taghabun",
+   "verses": 18,
+   "makki": false
+  },
+  {
+   "n": 65,
+   "name": "الطلاق",
+   "en": "At-Talaq",
+   "verses": 12,
+   "makki": false
+  },
+  {
+   "n": 66,
+   "name": "التحريم",
+   "en": "At-Tahrim",
+   "verses": 12,
+   "makki": false
+  },
+  {
+   "n": 67,
+   "name": "الملك",
+   "en": "Al-Mulk",
+   "verses": 30,
+   "makki": true
+  },
+  {
+   "n": 68,
+   "name": "القلم",
+   "en": "Al-Qalam",
+   "verses": 52,
+   "makki": true
+  },
+  {
+   "n": 69,
+   "name": "الحاقة",
+   "en": "Al-Haqqah",
+   "verses": 52,
+   "makki": true
+  },
+  {
+   "n": 70,
+   "name": "المعارج",
+   "en": "Al-Ma'arij",
+   "verses": 44,
+   "makki": true
+  },
+  {
+   "n": 71,
+   "name": "نوح",
+   "en": "Nuh",
+   "verses": 28,
+   "makki": true
+  },
+  {
+   "n": 72,
+   "name": "الجن",
+   "en": "Al-Jinn",
+   "verses": 28,
+   "makki": true
+  },
+  {
+   "n": 73,
+   "name": "المزمل",
+   "en": "Al-Muzzammil",
+   "verses": 20,
+   "makki": true
+  },
+  {
+   "n": 74,
+   "name": "المدثر",
+   "en": "Al-Muddaththir",
+   "verses": 56,
+   "makki": true
+  },
+  {
+   "n": 75,
+   "name": "القيامة",
+   "en": "Al-Qiyamah",
+   "verses": 40,
+   "makki": true
+  },
+  {
+   "n": 76,
+   "name": "الانسان",
+   "en": "Al-Insan",
+   "verses": 31,
+   "makki": false
+  },
+  {
+   "n": 77,
+   "name": "المرسلات",
+   "en": "Al-Mursalat",
+   "verses": 50,
+   "makki": true
+  },
+  {
+   "n": 78,
+   "name": "النبإ",
+   "en": "An-Naba",
+   "verses": 40,
+   "makki": true
+  },
+  {
+   "n": 79,
+   "name": "النازعات",
+   "en": "An-Nazi'at",
+   "verses": 46,
+   "makki": true
+  },
+  {
+   "n": 80,
+   "name": "عبس",
+   "en": "'Abasa",
+   "verses": 42,
+   "makki": true
+  },
+  {
+   "n": 81,
+   "name": "التكوير",
+   "en": "At-Takwir",
+   "verses": 29,
+   "makki": true
+  },
+  {
+   "n": 82,
+   "name": "الإنفطار",
+   "en": "Al-Infitar",
+   "verses": 19,
+   "makki": true
+  },
+  {
+   "n": 83,
+   "name": "المطففين",
+   "en": "Al-Mutaffifin",
+   "verses": 36,
+   "makki": true
+  },
+  {
+   "n": 84,
+   "name": "الإنشقاق",
+   "en": "Al-Inshiqaq",
+   "verses": 25,
+   "makki": true
+  },
+  {
+   "n": 85,
+   "name": "البروج",
+   "en": "Al-Buruj",
+   "verses": 22,
+   "makki": true
+  },
+  {
+   "n": 86,
+   "name": "الطارق",
+   "en": "At-Tariq",
+   "verses": 17,
+   "makki": true
+  },
+  {
+   "n": 87,
+   "name": "الأعلى",
+   "en": "Al-A'la",
+   "verses": 19,
+   "makki": true
+  },
+  {
+   "n": 88,
+   "name": "الغاشية",
+   "en": "Al-Ghashiyah",
+   "verses": 26,
+   "makki": true
+  },
+  {
+   "n": 89,
+   "name": "الفجر",
+   "en": "Al-Fajr",
+   "verses": 30,
+   "makki": true
+  },
+  {
+   "n": 90,
+   "name": "البلد",
+   "en": "Al-Balad",
+   "verses": 20,
+   "makki": true
+  },
+  {
+   "n": 91,
+   "name": "الشمس",
+   "en": "Ash-Shams",
+   "verses": 15,
+   "makki": true
+  },
+  {
+   "n": 92,
+   "name": "الليل",
+   "en": "Al-Layl",
+   "verses": 21,
+   "makki": true
+  },
+  {
+   "n": 93,
+   "name": "الضحى",
+   "en": "Ad-Duhaa",
+   "verses": 11,
+   "makki": true
+  },
+  {
+   "n": 94,
+   "name": "الشرح",
+   "en": "Ash-Sharh",
+   "verses": 8,
+   "makki": true
+  },
+  {
+   "n": 95,
+   "name": "التين",
+   "en": "At-Tin",
+   "verses": 8,
+   "makki": true
+  },
+  {
+   "n": 96,
+   "name": "العلق",
+   "en": "Al-'Alaq",
+   "verses": 19,
+   "makki": true
+  },
+  {
+   "n": 97,
+   "name": "القدر",
+   "en": "Al-Qadr",
+   "verses": 5,
+   "makki": true
+  },
+  {
+   "n": 98,
+   "name": "البينة",
+   "en": "Al-Bayyinah",
+   "verses": 8,
+   "makki": false
+  },
+  {
+   "n": 99,
+   "name": "الزلزلة",
+   "en": "Az-Zalzalah",
+   "verses": 8,
+   "makki": false
+  },
+  {
+   "n": 100,
+   "name": "العاديات",
+   "en": "Al-'Adiyat",
+   "verses": 11,
+   "makki": true
+  },
+  {
+   "n": 101,
+   "name": "القارعة",
+   "en": "Al-Qari'ah",
+   "verses": 11,
+   "makki": true
+  },
+  {
+   "n": 102,
+   "name": "التكاثر",
+   "en": "At-Takathur",
+   "verses": 8,
+   "makki": true
+  },
+  {
+   "n": 103,
+   "name": "العصر",
+   "en": "Al-'Asr",
+   "verses": 3,
+   "makki": true
+  },
+  {
+   "n": 104,
+   "name": "الهمزة",
+   "en": "Al-Humazah",
+   "verses": 9,
+   "makki": true
+  },
+  {
+   "n": 105,
+   "name": "الفيل",
+   "en": "Al-Fil",
+   "verses": 5,
+   "makki": true
+  },
+  {
+   "n": 106,
+   "name": "قريش",
+   "en": "Quraysh",
+   "verses": 4,
+   "makki": true
+  },
+  {
+   "n": 107,
+   "name": "الماعون",
+   "en": "Al-Ma'un",
+   "verses": 7,
+   "makki": true
+  },
+  {
+   "n": 108,
+   "name": "الكوثر",
+   "en": "Al-Kawthar",
+   "verses": 3,
+   "makki": true
+  },
+  {
+   "n": 109,
+   "name": "الكافرون",
+   "en": "Al-Kafirun",
+   "verses": 6,
+   "makki": true
+  },
+  {
+   "n": 110,
+   "name": "النصر",
+   "en": "An-Nasr",
+   "verses": 3,
+   "makki": false
+  },
+  {
+   "n": 111,
+   "name": "المسد",
+   "en": "Al-Masad",
+   "verses": 5,
+   "makki": true
+  },
+  {
+   "n": 112,
+   "name": "الإخلاص",
+   "en": "Al-Ikhlas",
+   "verses": 4,
+   "makki": true
+  },
+  {
+   "n": 113,
+   "name": "الفلق",
+   "en": "Al-Falaq",
+   "verses": 5,
+   "makki": true
+  },
+  {
+   "n": 114,
+   "name": "الناس",
+   "en": "An-Nas",
+   "verses": 6,
+   "makki": true
+  }
+ ]
+}
