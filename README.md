@@ -4,6 +4,10 @@
 
 **بلا سيرفر · بلا حساب · بلا إعلانات · وبلا تخزين للصوت عند أي جهة** — الصوت يُبثّ مباشرة من مصادره المعلنة.
 
+### ▶️ يعمل الآن على: **https://afkw2aziz-cmyk.github.io/quran-night/**
+
+> افتحه من كروم على أندرويد ← ⋮ ← «تثبيت التطبيق». (التفاصيل في §التثبيت أدناه.)
+
 [![Version](https://img.shields.io/github/v/tag/afkw2aziz-cmyk/quran-night?label=version&color=f2c14e)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![No dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](package.json)
